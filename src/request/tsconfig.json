@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "module"                          : "commonjs",
+        "target"                          : "es2018",
+        "moduleResolution"                : "node",
+        "removeComments"                  : true,
+        "noImplicitAny"                   : true,
+        "sourceMap"                       : true,
+        "alwaysStrict"                    : true,
+        "declaration"                     : true,
+        "experimentalDecorators"          : true,
+        "emitDecoratorMetadata"           : true,
+        "forceConsistentCasingInFileNames": true,
+        "importHelpers"                   : true,
+        "noImplicitReturns"               : true,
+        "noImplicitThis"                  : true,
+        "strictNullChecks"                : true
+    }
+}

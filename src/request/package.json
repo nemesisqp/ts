@@ -1,0 +1,29 @@
+{
+    "name"           : "@monolibs/request",
+    "version"        : "1.0.3",
+    "description"    : "request package with http2 support",
+    "main"           : "bundle/index.js",
+    "types"          : "bundle/index.d.ts",
+    "files"          : [
+        "bundle/index.js",
+        "bundle/index.d.ts",
+        "http2-client/*.js"
+    ],
+    "scripts"        : {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository"     : {
+        "type": "git",
+        "url" : "git+https://github.com/monolibs/request.git"
+    },
+    "author"         : "NDQP",
+    "license"        : "UNLICENSED",
+    "bugs"           : {
+        "url": "https://github.com/monolibs/request/issues"
+    },
+    "homepage"       : "https://github.com/monolibs/request#readme",
+    "devDependencies": {
+        "request"       : "^2.88.0",
+        "@types/request": "^2.48.1"
+    }
+}
