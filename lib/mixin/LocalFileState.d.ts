@@ -1,10 +1,7 @@
 /// <reference types="node" />
-declare type Constructor<T> = new (...args: any[]) => T;
-export declare function LocalFileState<T extends Constructor<{}>>(Base: T): {
-    new (...args: any[]): {
-        statePath: "";
-        load(): Promise<Buffer>;
-        save(data: Buffer): Promise<void>;
-    };
-} & T;
-export {};
+import { IState } from "./IState";
+export declare class LocalFileState implements IState {
+    statePath: string;
+    load(): Promise<Buffer>;
+    save(data: Buffer): Promise<void>;
+}
