@@ -2,6 +2,6 @@
 import { IState } from "./IState";
 export declare class LocalFileState implements IState {
     statePath: string;
-    load(): Promise<Buffer>;
+    load(): Promise<Buffer | null>;
     save(data: Buffer): Promise<void>;
 }

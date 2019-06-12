@@ -4,8 +4,13 @@ import {IState} from "./IState";
 export class LocalFileState implements IState {
     statePath = 'state.json';
 
-    async load(): Promise<Buffer> {
-        return Fs.promises.readFile(this.statePath);
+    async load(): Promise<Buffer | null> {
+        try {
+            return Fs.promises.readFile(this.statePath);
+        } catch (err) {
+            if (err.code === 'ENOENT') return null;
+            throw err;
+        }
     }
 
     async save(data: Buffer): Promise<void> {

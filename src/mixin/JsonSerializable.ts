@@ -2,9 +2,11 @@ import {ISerializable} from "./ISerializable";
 
 export class JsonSerializable implements ISerializable {
     beautify = false;
+
     [key: string]: any;
 
     deserialize(data: Buffer) {
+        if (!data) return;
         const instanceData = JSON.parse(data.toString('utf8'));
         const keys = Object.keys(this);
         for (const key of keys) {
