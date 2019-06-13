@@ -1,28 +1,28 @@
 {
-    "name"        : "@nemesisqp/ts",
-    "version"     : "1.0.1",
-    "description" : "collection of ts utils",
-    "main"        : "lib/index.js",
-    "types"       : "lib/index.d.ts",
-    "files"       : [
+    "name": "@nemesisqp/ts",
+    "version": "1.0.2",
+    "description": "collection of ts utils",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "files": [
         "lib/**/*",
         "src/**/*.ts"
     ],
-    "scripts"     : {
+    "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "repository"  : {
+    "repository": {
         "type": "git",
-        "url" : "git+https://github.com/nemesisqp/ts.git"
+        "url": "git+https://github.com/nemesisqp/ts.git"
     },
-    "author"      : "NDQP",
-    "license"     : "UNLICENSED",
-    "bugs"        : {
+    "author": "NDQP",
+    "license": "UNLICENSED",
+    "bugs": {
         "url": "https://github.com/nemesisqp/ts/issues"
     },
-    "homepage"    : "https://github.com/nemesisqp/ts#readme",
+    "homepage": "https://github.com/nemesisqp/ts#readme",
     "dependencies": {
-        "@types/node"   : "^10.14.7",
+        "@types/node": "^10.14.7",
         "@types/request": "^2.48.1"
     }
 }
