@@ -1,0 +1,21 @@
+{
+    "name": "@monolibs/log",
+    "version": "1.0.3",
+    "description": "monolithic pino log package",
+    "main": "index.js",
+    "types": "index.d.ts",
+    "files": [
+        "index.js",
+        "index.d.ts"
+    ],
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "NDQP",
+    "license": "UNLICENSED",
+    "devDependencies": {
+        "@types/pino": "^5.8.8",
+        "pino": "^5.12.6",
+        "pino-pretty": "^3.1.0"
+    }
+}

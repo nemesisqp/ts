@@ -23,7 +23,7 @@
     },
     "homepage"       : "https://github.com/monolibs/request#readme",
     "devDependencies": {
-        "request"       : "^2.88.0",
-        "@types/request": "^2.48.1"
+        "@types/request": "^2.48.1",
+        "@types/pino": "^5.8.8"
     }
 }
